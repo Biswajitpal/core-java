@@ -13,14 +13,18 @@ class TwoSumProblem {
     // }
     void toSum(int [] nums, int target){
         for(int i=0; i< nums.length; i++){
-            for(int j- i+1;)
+            for(int j=i+1; j< nums.length; j++){
+                if(nums[i]+nums[j] == target){
+                    System.out.println("Indices: " + i + ", " + j);
+                    return;
+                }
+            }
         }
     }
     public static void main(String[] args) {
         TwoSumProblem obj = new TwoSumProblem();
         int[] nums = {2, 7, 11, 15};
         int target = 9;
-        int[] result = obj.twoSum(nums, target);
-        System.out.println("Indices: " + result[0] + ", " + result[1]);
+        obj.toSum(nums, target);
     }
 }

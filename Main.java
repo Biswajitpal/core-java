@@ -1,4 +1,7 @@
 // file name: Main.java 
+
+// Object are store in heap memory and reference variable are store in stack memory.
+
 class Base {
     String name = "Smith";
     int age = 1000;

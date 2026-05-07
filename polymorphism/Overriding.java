@@ -15,6 +15,11 @@ if method is final then it cannot be overridden
 if method is static then it cannot be overridden but it can be redefined
 if method is private then it cannot be overridden but it can be redefined
 
+not possible to decrease the permission in java
+protected > default > private > public
+protected method can be overridden with protected or public but not with private or default
+default method can be overridden with default or public but not with private or protected
+private method can be overridden with private or public but not with protected or default
 */
 
 // if class define as final then it cannot be inherited

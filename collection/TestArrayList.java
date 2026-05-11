@@ -1,19 +1,25 @@
 package collection;
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
-import java.util.Collection;
-import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 
 public class TestArrayList {
+    static int findLargestNumber(List<Integer> numbers){
+        int largest = Integer.MIN_VALUE;
+        for (int number : numbers) {
+            if (number > largest) {
+                largest = number;
+            }
+        }
+        return largest;
+    }
     public static void main(String[] args) {
-        ArrayList fruits = new ArrayList<>();
-        fruits.add("Apple");
-        fruits.add(1, "Banana");
-        fruits.add(1, "mango");
-        System.err.println(fruits);
+        // ArrayList fruits = new ArrayList<>();
+        // fruits.add("Apple");
+        // fruits.add(1, "Banana");
+        // fruits.add(1, "mango");
+        // System.err.println(fruits);
 
         /*ArrayList <String> list = new ArrayList<>(15);
         list.add("Hello");
@@ -44,10 +50,14 @@ public class TestArrayList {
         // Collections.sort(nums, Collections.reverseOrder());
         // System.out.println(nums);
 
-        // ArrayList <String> fruits = new ArrayList<>(List.of("Banana", "Apple", "Orange", "Mango", "Grapes", "Pineapple", "Peach", "Strawberry", "Blueberry", "Watermelon", "Kiwi", "Papaya", "Cherry", "Lemon", "Lime", "Coconut", "Avocado", "Raspberry", "Blackberry", "Tangerine"));
-        // // fruits.sort(new StringLengthComparator());
+        ArrayList <String> fruits = new ArrayList<>(List.of("Banana", "Apple", "Orange", "Mango", "Grapes", "Pineapple", "Peach", "Strawberry", "Blueberry", "Watermelon", "Kiwi", "Papaya", "Cherry", "Lemon", "Lime", "Coconut", "Avocado", "Raspberry", "Blackberry", "Tangerine"));
+        // fruits.sort(new StringLengthComparator());
         // fruits.sort((a,b) -> a.length() - b.length()); // lambda expression to sort by length
+        fruits.sort((a,b) -> a.compareTo(b)); // lambda expression to sort by length
         // System.out.println(fruits);
+        List <Integer> numbers = new ArrayList<>(List.of(3, 1, 4, 1, 5, 9, 2, 6, 5, 3, 5));
+        int largestNumber = findLargestNumber(numbers);
+        System.out.println("Largest number: " + findLargestNumber(numbers));
     
     }
 

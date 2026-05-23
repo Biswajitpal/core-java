@@ -1,5 +1,6 @@
 package string;
 
+import java.util.Arrays;
 import java.util.HashMap;
 //what is string constant pull?
 import java.util.Scanner;
@@ -70,10 +71,12 @@ public class TestString {
 
         String email = "test@gmail.com";
         // find the company name from email id
-        System.out.println(email.substring(email.indexOf("@") + 1, email.indexOf(".")));
+        // System.out.println(email.substring(email.indexOf("@") + 1, email.indexOf(".")));
         String newString = email.split("@")[1];
-        System.out.println(newString.split("\\.")[0]);
-        
+        // System.out.println(newString.split("\\.")[0]);
+
+        System.out.print(Arrays.toString("gmail.com".split(".")));
+
 
     }
 }

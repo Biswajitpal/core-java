@@ -39,12 +39,12 @@ public class TestArrayList {
         List <String> list2 = new ArrayList<>(list);
         list2.add("new element2");
         System.out.println(list2);*/
-        List <Integer> nums = new ArrayList<>();
+        List <Integer> nums = new ArrayList<>(List.of(3, 1, 2));
         nums.add(3);
         nums.add(1);
         nums.add(2);
         nums.sort(null); // null is used to sort in natural order
-        System.out.println(nums);
+        // System.out.println(nums);
         // Collections.sort(nums); 
         // System.out.println(nums);
         // Collections.sort(nums, Collections.reverseOrder());
@@ -57,7 +57,7 @@ public class TestArrayList {
         // System.out.println(fruits);
         List <Integer> numbers = new ArrayList<>(List.of(3, 1, 4, 1, 5, 9, 2, 6, 5, 3, 5));
         int largestNumber = findLargestNumber(numbers);
-        System.out.println("Largest number: " + findLargestNumber(numbers));
+        // System.out.println("Largest number: " + findLargestNumber(numbers));
     
     }
 

@@ -43,7 +43,7 @@ public class AbstractClass extends MyClass{
         // AbstractClass obj1 = new AbstractClass("John", 25);
         // obj1.display();
         // f2();
-        System.out.println('j' + 'a' + 'v' + 'a'); 
+        System.out.println('j' + 'a' + 'v' + 'a');
     }
     
     
